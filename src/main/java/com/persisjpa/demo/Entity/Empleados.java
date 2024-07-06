@@ -24,7 +24,7 @@ public class Empleados {
     @Id
     @Column(name = "id_empleado")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID idEmpleado;
+    private UUID idEmpleado; //usamos UUIS principalmente para poder generar id para usarios de manera aleatoria no secuenciales
 
     @Column(name = "nombre_empleado")
     private String nombreEmpleado;
