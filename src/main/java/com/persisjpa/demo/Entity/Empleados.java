@@ -22,9 +22,8 @@ import lombok.Setter;
 public class Empleados {
 
     @Id
-    @Column(name = "id_empleado")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID idEmpleado; //usamos UUIS principalmente para poder generar id para usarios de manera aleatoria no secuenciales
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id; //usamos UUIS principalmente para poder generar id para usarios de manera aleatoria no secuenciales
 
     @Column(name = "nombre_empleado")
     private String nombreEmpleado;
